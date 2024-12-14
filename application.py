@@ -8,8 +8,8 @@ application = Flask(__name__)
 app=application
 
 ## import ridge regressor and standard scaler pickle
-ridge_model = pickle.load(open('C:/Users/mihir/Downloads/FWI_Predictor_ML-main/FWI_Predictor_ML-main/notebook/ridge.pkl', 'rb'))
-standard_scaler = pickle.load(open('notebook/scaler.pkl', 'rb'))
+ridge_model = pickle.load(open('C:/Users/mihir/Downloads/FWI_Predictor_ML-main/FWI_Predictor_ML-main/models/ridge.pkl', 'rb'))
+standard_scaler = pickle.load(open('models/scaler.pkl', 'rb'))
 
 
 @app.route('/',methods=['GET','POST'])
